@@ -36,12 +36,38 @@ function storeVariables() {
 
 // storeVariables();
 
-function fillArray() {
+function makeArray() {
     var anotherList = [];
-    for(var i = 1 ; i <= 10 ; i++){
-        anotherList.push(i * 2)
+
+    for (var i = 1; i <= 10; i++) {
+        if (anotherList.length < 5) {
+            anotherList.push(i * 2)
+        } else {
+            return anotherList;
+        }
     }
-    console.log(anotherList);
+
 }
 
-fillArray();
+// var result = makeArray();
+
+// console.log(result);
+
+var studentList = [10, 12.5, 2, 2, 2 , 19, 0];
+
+function calculateMoy(){
+    var somme = 0;
+    for(var i = 0 ; i < studentList.length ; i++){
+        somme = somme + studentList[i]
+    }
+    var moy = somme / studentList.length ;
+    console.log(moy);
+    if(moy >= 10){
+        console.log("Mabrouk alikoum")
+    }else{
+        console.log("Lah yrebeh :P ")
+    }
+}
+
+
+calculateMoy();
