@@ -1,6 +1,27 @@
-var a = 10;
-var b = 10;
-var result = a >= b;
-var result2 = a + b;
-console.log(result , w);
+
+var global = 19;
+
+function printIamDev() {
+    // x == 6 
+    var x = 0;
+    for(var i = 0 ; i < 5 ; i ++){
+        x = x + 4;
+        console.log(i , x);
+        if(x >= 6){
+            break;
+        }else{
+            continue;
+        }
+    }
+}
+
+printIamDev();
+
+
+
+
+
+
+
+
 
