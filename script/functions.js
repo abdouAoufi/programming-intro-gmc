@@ -70,4 +70,18 @@ function calculateMoy(){
 }
 
 
-calculateMoy();
+// calculateMoy();
+
+
+
+
+function square(input){
+    var result = input * input;
+    return result;
+}
+
+
+var rs =  square(9);
+
+console.log(rs);
+
