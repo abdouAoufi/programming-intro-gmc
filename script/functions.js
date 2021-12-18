@@ -1,5 +1,4 @@
-var originalUserName = "ABDOU";
-var orignalPassword = 1234;
+var originalUserName = "ABDOU";var orignalPassword = 1234;
 
 function login(userName, password) {
     if (userName == originalUserName) {
@@ -83,5 +82,5 @@ function square(input){
 
 var rs =  square(9);
 
-console.log(rs);
+// console.log(rs);
 

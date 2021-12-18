@@ -14,8 +14,9 @@ function power(value, power) {
             for (var i = 0; i < limit; i++) {
                 result = result * value;
             }
-            return 1 / result;
-        } else  {
+            result = 1 / result;
+            return result;
+        } else {
             for (var i = 0; i < power; i++) {
                 result = result * value;
             }
@@ -31,4 +32,20 @@ var r1 = power(2, 3);
 
 
 
-console.log(r1)
+// console.log(r1);
+
+
+function factorial(val) {
+    var result = val;
+    for (var i = val; i > 1; i--) {
+        result = result * (i - 1)
+    }
+    return result;
+}
+
+
+var res = factorial(5);
+// console.log(res)
+
+
+
