@@ -110,6 +110,6 @@ function greetAlgeria() {
     console.log(result);
 }
 
-greetAlgeria();
+// greetAlgeria();
 
 
