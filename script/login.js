@@ -1,4 +1,5 @@
-var database = [];
+var database = []; // empty list
+// signup
 var userNameInput = document.getElementById("signup-user-name");
 var passwordInput = document.getElementById("signup-password");
 var signupBtn = document.getElementById("signup-btn");
@@ -11,10 +12,11 @@ var loginBtn = document.getElementById("login-btn");
 
 function signup() {
     var userInfo = {
-        userName: userNameInput.value,
+        userName: userNameInput.value, // to get text from input
         password: passwordInput.value
     }
     database.push(userInfo);
+    alert("Hello " + userNameInput.value  +" you're signed")
 }
 
 
@@ -28,11 +30,19 @@ function login() {
         userName: LOGuserNameInput.value,
         password: LOGpasswordInput.value
     };
+    var isLimit = false ;
     for(var i = 0 ; i < database.length ; i ++){
-        if(database[i].userName === userInfo.userName){
-            console.log("Yes he exist")
-        }else{
-            console.log("no he does not exist");
+        if(i === database.length - 1){
+            isLimit = true ;
+        }
+        if(database[i].userName === userInfo.userName ){
+            if(database[i].password === userInfo.password){
+                return alert("Authenticated successfully!")
+            }else{
+                return alert("Check your password!")
+            }
+        }else if(isLimit === true){
+            alert("no he does not exist");
         }
     }
 }
