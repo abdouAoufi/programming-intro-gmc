@@ -24,7 +24,7 @@ var prdBTN = document.getElementById("prdBTN")
 
 
 
-functio predictScoreDz() {
+function predictScoreDz() {
     return Math.round(Math.random() * 4)
 }
 
