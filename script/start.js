@@ -1,7 +1,3 @@
-// how to declare a variable in JS
-var name = "Hussein";
-var age = 38;
-
 function power(value, power) {
     var errorMessage = "Input is not a number!!!"
     if (typeof value === "number" && typeof power === "number") {
@@ -28,24 +24,7 @@ function power(value, power) {
     }
 }
 
-var r1 = power(2, 3);
 
-
-
-// console.log(r1);
-
-
-function factorial(val) {
-    var result = val;
-    for (var i = val; i > 1; i--) {
-        result = result * (i - 1)
-    }
-    return result;
-}
-
-
-var res = factorial(5);
-// console.log(res)
 
 
 
